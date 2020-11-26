@@ -10,6 +10,10 @@ main {
     text-align: center;
 }
 
+form {
+    height: 55px;
+}
+
 h1 {
     color: #025157;
     font-family: "Alegreya", serif;
@@ -149,4 +153,51 @@ p {
 .features .feature-card .feature-image img {
     margin-top: 0;
     height: 100%;
+}
+
+@media (max-width: 575px) {
+    .banner > img {
+        width: 100%;
+    }
+
+    .promo {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .explanatory-video > video {
+        width: 100%;
+    }
+
+    .publish {
+        margin-top: 10px;
+    }
+
+    .publish > h3 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .publish > form {
+        flex-direction: column;
+    }
+
+    .publish > form > div {
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .publish > form > div > input {
+        width: 65%;
+    }
+
+    .features {
+        grid-template: repeat(4, 1fr) / 1fr;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .feature-image {
+        display: none;
+    }
 }
