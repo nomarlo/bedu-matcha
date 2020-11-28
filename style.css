@@ -10,6 +10,30 @@ main {
     text-align: center;
 }
 
+.actions {
+    text-align: right;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.navbar {
+    text-align: center;
+    color: #025157;
+    font-weight: 500;
+}
+
+.navbar-light .nav-item .nav-link {
+    color: #025157;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #025157;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 form {
     height: 55px;
 }
@@ -153,6 +177,88 @@ p {
 .features .feature-card .feature-image img {
     margin-top: 0;
     height: 100%;
+}
+
+.success-stories {
+    display: flex;
+    background: #a1d683;
+    height: auto;
+    padding: 100px;
+}
+
+.success-stories .overview h2{
+    color: #025157;
+    font-family: "Alegreya", serif;
+    font-size: 51px;
+}
+
+.success-stories .overview p{
+    color: #343434;
+}
+
+.success-stories .overview img {
+    width: 500px;
+    max-width: 100%;
+}
+
+.stories-carousel {
+    width: 500px;
+}
+
+.stories-carousel .carousel-item .card .card-body {
+    text-align: left;
+    margin-top: 50px ;
+}
+
+.stories-carousel .carousel-item .card .card-body h4{
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.stories-carousel .carousel-item .card {
+    border-radius: 10px
+}
+
+.stories-carousel .carousel-item .card .results{
+    display: flex;
+}
+
+.stories-carousel .carousel-item .card .results img{
+    width: 50px;
+    height: 50px;
+}
+
+.stories-carousel .carousel-item .card-media {
+    position: relative;
+}
+
+.card-media img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.carousel-indicators{
+    bottom: -40px;
+}
+
+.stories-carousel .carousel-item .card-media .company{
+    background: #f9da73;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom:-40px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stories-carousel .carousel-item .card-media .company img{
+    width: 100%;
 }
 
 @media (max-width: 575px) {
